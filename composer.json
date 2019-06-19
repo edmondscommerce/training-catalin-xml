@@ -3,5 +3,9 @@
     "description": "A bootstrap for open source PHP development projects",
     "require-dev": {
         "edmondscommerce/phpqa": "dev-master@dev"
-    }
+    },
+  "require": {
+    "ext-simplexml": "*",
+    "ext-json": "*"
+  }
 }
