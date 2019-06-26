@@ -7,4 +7,4 @@
  */
 require 'Feed.php';
 $feed = new \EdmondsCommerce\CatalinTrainingXML\Reddit\Feed();
-print_r($feed->getFeed());
+$feed->getFeed();

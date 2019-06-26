@@ -15,7 +15,9 @@ class Feed
         {
             print_r($t->title[0]->asXML());
             print_r("\n");
+            print_r($t->author->name->asXML());
+            print_r("\n");
+            print_r("\n");
         }
-        return null;
     }
 }
