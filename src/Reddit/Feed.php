@@ -10,11 +10,12 @@ class Feed
     public function getFeed()
     {
         $feed = file_get_contents('https://www.reddit.com/r/CafeRacers/.rss');
-
         $xml = new SimpleXMLElement($feed);
-
-        $result = $xml->entry[1];
-
-        return $result;
+        foreach ($xml->entry as $t)
+        {
+            print_r($t->title[0]->asXML());
+            print_r("\n");
+        }
+        return null;
     }
 }
